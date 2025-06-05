@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini-Portfolio Étudiant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mon Mini-Site</a>
+    </div>
+  </nav>
+
+  <!-- SECTION PRINCIPALE -->
+  <main class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card text-center">
+          <img src="photo.jpeg" class="card-img-top" alt="Photo de profil">
+          <div class="card-body">
+            <h5 class="card-title">EL HSISSEN Saad</h5>
+            <p class="card-text">Étudiant en informatique passionné par les technologies web et le développement logiciel.</p>
+
+            <!-- TABS -->
+            <ul class="nav nav-tabs" id="cvTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="exp-tab" data-bs-toggle="tab" data-bs-target="#exp" type="button" role="tab">Expériences</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="edu-tab" data-bs-toggle="tab" data-bs-target="#edu" type="button" role="tab">Éducation</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="comp-tab" data-bs-toggle="tab" data-bs-target="#comp" type="button" role="tab">Compétences</button>
+              </li>
+            </ul>
+
+            <!-- CONTENU TABS -->
+ <!-- CONTENU TABS -->
+<div class="tab-content mt-3" id="cvTabsContent">
+
+  <!-- Onglet Expériences -->
+  <div class="tab-pane fade show active" id="exp" role="tabpanel">
+    <div class="list-group text-start">
+      <div class="list-group-item">
+        <h6 class="mb-1 fw-bold">Stage Développement Web – Entreprise XYZ (2024)</h6>
+        <p class="mb-1">Développement d’un site vitrine en HTML, CSS et Bootstrap.</p>
+      </div>
+      <div class="list-group-item">
+        <h6 class="mb-1 fw-bold">Projet Cybersécurité – INSA (2023)</h6>
+        <p class="mb-1">Analyse des vulnérabilités d’un réseau simulé avec Nmap et Wireshark.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Onglet Éducation -->
+  <div class="tab-pane fade" id="edu" role="tabpanel">
+    <div class="list-group text-start">
+      <div class="list-group-item">
+        <h6 class="mb-1 fw-bold">INSA Hauts-de-France</h6>
+        <p class="mb-1">Étudiant en 3e année, spécialité informatique et cybersécurité.</p>
+      </div>
+      <div class="list-group-item">
+        <h6 class="mb-1 fw-bold">Baccalauréat Scientifique – Mention Bien</h6>
+        <p class="mb-1">Spécialité Mathématiques et SVT, option européenne.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Onglet Compétences -->
+  <div class="tab-pane fade" id="comp" role="tabpanel">
+    <ul class="list-group list-group-flush text-start">
+      <li class="list-group-item">
+        <span data-bs-toggle="tooltip" title="Langage web pour structurer les pages">HTML</span>,
+        <span data-bs-toggle="tooltip" title="Langage de style pour le design">CSS</span>,
+        <span data-bs-toggle="tooltip" title="Langage de script pour interactions dynamiques">JavaScript</span>
+      </li>
+      <li class="list-group-item">
+        <span data-bs-toggle="tooltip" title="Langage puissant pour IA et scripts">Python</span>,
+        <span data-bs-toggle="tooltip" title="Système de versionnement collaboratif">Git</span>,
+        <span data-bs-toggle="tooltip" title="Outil de conception responsive web">Bootstrap</span>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+            <!-- BOUTON MODALE -->
+            <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#lettreModal">
+              Voir ma lettre de motivation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- CARROUSEL -->
+  <div class="container mt-5">
+    <h3 class="text-center mb-4">Mes projets</h3>
+
+    <div id="carouselProjets" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="web.jpeg" class="d-block w-100" alt="Projet 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Projet Web – Portfolio</h5>
+            <p>Création d’un site web personnel responsive avec Bootstrap.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="faille.jpeg" class="d-block w-100" alt="Projet 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Détection d’intrusion</h5>
+            <p>Implémentation d’un système de détection de failles réseau.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="echec.jpg" class="d-block w-100" alt="Projet 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Application mobile Flutter</h5>
+            <p>Développement d’un jeu d’échecs intelligent.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contrôles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjets" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Précédent</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselProjets" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MODALE -->
+  <div class="modal fade" id="lettreModal" tabindex="-1" aria-labelledby="lettreModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="lettreModalLabel">Lettre de motivation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body text-start">
+          Madame, Monsieur,<br><br>
+          Actuellement étudiant en 3e année à l’INSA Hauts-de-France, je suis passionné par l’informatique, notamment la cybersécurité et le développement web.<br><br>
+          Je souhaite vivement intégrer votre entreprise dans le cadre d’un stage pour mettre en pratique mes compétences et contribuer activement à vos projets.<br><br>
+          Je reste à votre disposition pour un entretien.<br><br>
+          Cordialement,<br>
+          Saad EL HSISSEN
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Sélectionne tous les éléments ayant l'attribut data-bs-toggle="tooltip"
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+
+  // Crée un tooltip Bootstrap pour chacun d'eux
+  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+
+</body>
+</html>
